@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/textColorLinkInverse"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="100dp"
+        android:text="Login"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="btn_signupForm"
+        android:text="Register"
+        android:textAppearance="?android:textAppearanceMedium"
+
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryFixedDim"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:ems="10"
+        android:inputType="text"
+        android:text="      Safety Beacon"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+</RelativeLayout>
